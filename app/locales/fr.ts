@@ -43,6 +43,8 @@ const fr: PartialLocaleType = {
       PinToastAction: "Voir",
       Delete: "Supprimer",
       Edit: "Modifier",
+      RefreshTitle: "Actualiser le titre",
+      RefreshToast: "Demande d'actualisation du titre envoyée",
     },
     Commands: {
       new: "Nouvelle discussion",
@@ -422,6 +424,10 @@ const fr: PartialLocaleType = {
     },
 
     Model: "Modèle",
+    CompressModel: {
+      Title: "Modèle de compression",
+      SubTitle: "Modèle utilisé pour compresser l'historique",
+    },
     Temperature: {
       Title: "Aléatoire (temperature)",
       SubTitle: "Plus la valeur est élevée, plus les réponses sont aléatoires",
@@ -479,6 +485,21 @@ const fr: PartialLocaleType = {
   },
   FineTuned: {
     Sysmessage: "Vous êtes un assistant",
+  },
+  SearchChat: {
+    Name: "Recherche",
+    Page: {
+      Title: "Rechercher dans l'historique des discussions",
+      Search: "Entrez le mot-clé de recherche",
+      NoResult: "Aucun résultat trouvé",
+      NoData: "Aucune donnée",
+      Loading: "Chargement",
+
+      SubTitle: (count: number) => `${count} résultats trouvés`,
+    },
+    Item: {
+      View: "Voir",
+    },
   },
   Mask: {
     Name: "Masque",

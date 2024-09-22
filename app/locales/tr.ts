@@ -43,6 +43,8 @@ const tr: PartialLocaleType = {
       PinToastAction: "Görünüm",
       Delete: "Sil",
       Edit: "Düzenle",
+      RefreshTitle: "Başlığı Yenile",
+      RefreshToast: "Başlık yenileme isteği gönderildi",
     },
     Commands: {
       new: "Yeni sohbet",
@@ -414,6 +416,10 @@ const tr: PartialLocaleType = {
     },
 
     Model: "Model (model)",
+    CompressModel: {
+      Title: "Sıkıştırma Modeli",
+      SubTitle: "Geçmişi sıkıştırmak için kullanılan model",
+    },
     Temperature: {
       Title: "Rastgelelik (temperature)",
       SubTitle: "Değer arttıkça yanıt daha rastgele olur",
@@ -469,6 +475,21 @@ const tr: PartialLocaleType = {
   },
   FineTuned: {
     Sysmessage: "Sen bir asistansın",
+  },
+  SearchChat: {
+    Name: "Ara",
+    Page: {
+      Title: "Sohbet geçmişini ara",
+      Search: "Arama anahtar kelimelerini girin",
+      NoResult: "Sonuç bulunamadı",
+      NoData: "Veri yok",
+      Loading: "Yükleniyor",
+
+      SubTitle: (count: number) => `${count} sonuç bulundu`,
+    },
+    Item: {
+      View: "Görüntüle",
+    },
   },
   Mask: {
     Name: "Maske",

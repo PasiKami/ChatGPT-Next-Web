@@ -43,6 +43,8 @@ const bn: PartialLocaleType = {
       PinToastAction: "দেখুন",
       Delete: "মুছে ফেলুন",
       Edit: "সম্পাদনা করুন",
+      RefreshTitle: "শিরোনাম রিফ্রেশ করুন",
+      RefreshToast: "শিরোনাম রিফ্রেশ অনুরোধ পাঠানো হয়েছে",
     },
     Commands: {
       new: "নতুন চ্যাট",
@@ -411,6 +413,10 @@ const bn: PartialLocaleType = {
     },
 
     Model: "মডেল (model)",
+    CompressModel: {
+      Title: "সংকোচন মডেল",
+      SubTitle: "ইতিহাস সংকুচিত করার জন্য ব্যবহৃত মডেল",
+    },
     Temperature: {
       Title: "যাদুকরিতা (temperature)",
       SubTitle: "মান বাড়ালে উত্তর বেশি এলোমেলো হবে",
@@ -465,6 +471,21 @@ const bn: PartialLocaleType = {
   },
   FineTuned: {
     Sysmessage: "আপনি একজন সহকারী",
+  },
+  SearchChat: {
+    Name: "অনুসন্ধান",
+    Page: {
+      Title: "চ্যাট রেকর্ড অনুসন্ধান করুন",
+      Search: "অনুসন্ধান কীওয়ার্ড লিখুন",
+      NoResult: "কোন ফলাফল পাওয়া যায়নি",
+      NoData: "কোন তথ্য নেই",
+      Loading: "লোড হচ্ছে",
+
+      SubTitle: (count: number) => `${count} টি ফলাফল পাওয়া গেছে`,
+    },
+    Item: {
+      View: "দেখুন",
+    },
   },
   Mask: {
     Name: "মাস্ক",

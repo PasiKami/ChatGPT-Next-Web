@@ -43,6 +43,8 @@ const jp: PartialLocaleType = {
       PinToastAction: "見る",
       Delete: "削除",
       Edit: "編集",
+      RefreshTitle: "タイトルを更新",
+      RefreshToast: "タイトル更新リクエストが送信されました",
     },
     Commands: {
       new: "新しいチャット",
@@ -407,6 +409,10 @@ const jp: PartialLocaleType = {
     },
 
     Model: "モデル (model)",
+    CompressModel: {
+      Title: "圧縮モデル",
+      SubTitle: "履歴を圧縮するために使用されるモデル",
+    },
     Temperature: {
       Title: "ランダム性 (temperature)",
       SubTitle: "値が大きいほど応答がランダムになります",
@@ -460,8 +466,26 @@ const jp: PartialLocaleType = {
   Plugin: {
     Name: "プラグイン",
   },
+  Discovery: {
+    Name: "発見",
+  },
   FineTuned: {
     Sysmessage: "あなたはアシスタントです",
+  },
+  SearchChat: {
+    Name: "検索",
+    Page: {
+      Title: "チャット履歴を検索",
+      Search: "検索キーワードを入力",
+      NoResult: "結果が見つかりませんでした",
+      NoData: "データがありません",
+      Loading: "読み込み中",
+
+      SubTitle: (count: number) => `${count} 件の結果が見つかりました`,
+    },
+    Item: {
+      View: "表示",
+    },
   },
   Mask: {
     Name: "マスク",

@@ -43,6 +43,8 @@ const cs: PartialLocaleType = {
       PinToastAction: "Zobrazit",
       Delete: "Smazat",
       Edit: "Upravit",
+      RefreshTitle: "Obnovit název",
+      RefreshToast: "Požadavek na obnovení názvu byl odeslán",
     },
     Commands: {
       new: "Nová konverzace",
@@ -410,6 +412,10 @@ const cs: PartialLocaleType = {
     },
 
     Model: "Model (model)",
+    CompressModel: {
+      Title: "Kompresní model",
+      SubTitle: "Model používaný pro kompresi historie",
+    },
     Temperature: {
       Title: "Náhodnost (temperature)",
       SubTitle: "Čím vyšší hodnota, tím náhodnější odpovědi",
@@ -466,6 +472,21 @@ const cs: PartialLocaleType = {
   },
   FineTuned: {
     Sysmessage: "Jste asistent",
+  },
+  SearchChat: {
+    Name: "Hledat",
+    Page: {
+      Title: "Hledat v historii chatu",
+      Search: "Zadejte hledané klíčové slovo",
+      NoResult: "Nebyly nalezeny žádné výsledky",
+      NoData: "Žádná data",
+      Loading: "Načítání",
+
+      SubTitle: (count: number) => `Nalezeno ${count} výsledků`,
+    },
+    Item: {
+      View: "Zobrazit",
+    },
   },
   Mask: {
     Name: "Maska",

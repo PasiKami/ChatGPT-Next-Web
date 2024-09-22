@@ -43,6 +43,8 @@ const ko: PartialLocaleType = {
       PinToastAction: "보기",
       Delete: "삭제",
       Edit: "편집",
+      RefreshTitle: "제목 새로고침",
+      RefreshToast: "제목 새로고침 요청이 전송되었습니다",
     },
     Commands: {
       new: "새 채팅",
@@ -404,6 +406,10 @@ const ko: PartialLocaleType = {
     },
 
     Model: "모델 (model)",
+    CompressModel: {
+      Title: "압축 모델",
+      SubTitle: "기록을 압축하는 데 사용되는 모델",
+    },
     Temperature: {
       Title: "무작위성 (temperature)",
       SubTitle: "값이 클수록 응답이 더 무작위적",
@@ -457,6 +463,21 @@ const ko: PartialLocaleType = {
   },
   FineTuned: {
     Sysmessage: "당신은 보조자입니다.",
+  },
+  SearchChat: {
+    Name: "검색",
+    Page: {
+      Title: "채팅 기록 검색",
+      Search: "검색어 입력",
+      NoResult: "결과를 찾을 수 없습니다",
+      NoData: "데이터가 없습니다",
+      Loading: "로딩 중",
+
+      SubTitle: (count: number) => `${count}개의 결과를 찾았습니다`,
+    },
+    Item: {
+      View: "보기",
+    },
   },
   Mask: {
     Name: "마스크",

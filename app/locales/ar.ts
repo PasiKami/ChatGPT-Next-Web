@@ -43,6 +43,8 @@ const ar: PartialLocaleType = {
       PinToastAction: "عرض",
       Delete: "حذف",
       Edit: "تحرير",
+      RefreshTitle: "تحديث العنوان",
+      RefreshToast: "تم إرسال طلب تحديث العنوان",
     },
     Commands: {
       new: "دردشة جديدة",
@@ -404,6 +406,10 @@ const ar: PartialLocaleType = {
     },
 
     Model: "النموذج",
+    CompressModel: {
+      Title: "نموذج الضغط",
+      SubTitle: "النموذج المستخدم لضغط السجل التاريخي",
+    },
     Temperature: {
       Title: "العشوائية (temperature)",
       SubTitle: "كلما زادت القيمة، زادت العشوائية في الردود",
@@ -458,6 +464,21 @@ const ar: PartialLocaleType = {
   },
   FineTuned: {
     Sysmessage: "أنت مساعد",
+  },
+  SearchChat: {
+    Name: "بحث",
+    Page: {
+      Title: "البحث في سجلات الدردشة",
+      Search: "أدخل كلمات البحث",
+      NoResult: "لم يتم العثور على نتائج",
+      NoData: "لا توجد بيانات",
+      Loading: "جارٍ التحميل",
+
+      SubTitle: (count: number) => `تم العثور على ${count} نتائج`,
+    },
+    Item: {
+      View: "عرض",
+    },
   },
   Mask: {
     Name: "القناع",

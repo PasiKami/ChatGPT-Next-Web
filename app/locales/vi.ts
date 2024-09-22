@@ -43,6 +43,8 @@ const vi: PartialLocaleType = {
       PinToastAction: "Xem",
       Delete: "Xóa",
       Edit: "Chỉnh sửa",
+      RefreshTitle: "Làm mới tiêu đề",
+      RefreshToast: "Đã gửi yêu cầu làm mới tiêu đề",
     },
     Commands: {
       new: "Tạo cuộc trò chuyện mới",
@@ -410,6 +412,10 @@ const vi: PartialLocaleType = {
     },
 
     Model: "Mô hình (model)",
+    CompressModel: {
+      Title: "Mô hình nén",
+      SubTitle: "Mô hình được sử dụng để nén lịch sử",
+    },
     Temperature: {
       Title: "Độ ngẫu nhiên (temperature)",
       SubTitle: "Giá trị càng lớn, câu trả lời càng ngẫu nhiên",
@@ -465,6 +471,21 @@ const vi: PartialLocaleType = {
   },
   FineTuned: {
     Sysmessage: "Bạn là một trợ lý",
+  },
+  SearchChat: {
+    Name: "Tìm kiếm",
+    Page: {
+      Title: "Tìm kiếm lịch sử trò chuyện",
+      Search: "Nhập từ khóa tìm kiếm",
+      NoResult: "Không tìm thấy kết quả",
+      NoData: "Không có dữ liệu",
+      Loading: "Đang tải",
+
+      SubTitle: (count: number) => `Tìm thấy ${count} kết quả`,
+    },
+    Item: {
+      View: "Xem",
+    },
   },
   Mask: {
     Name: "Mặt nạ",

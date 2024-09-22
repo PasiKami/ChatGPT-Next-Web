@@ -43,6 +43,8 @@ const it: PartialLocaleType = {
       PinToastAction: "Visualizza",
       Delete: "Elimina",
       Edit: "Modifica",
+      RefreshTitle: "Aggiorna titolo",
+      RefreshToast: "Richiesta di aggiornamento del titolo inviata",
     },
     Commands: {
       new: "Nuova chat",
@@ -423,6 +425,10 @@ const it: PartialLocaleType = {
     },
 
     Model: "Modello (model)",
+    CompressModel: {
+      Title: "Modello di compressione",
+      SubTitle: "Modello utilizzato per comprimere la cronologia",
+    },
     Temperature: {
       Title: "Casualità (temperature)",
       SubTitle: "Valore più alto, risposte più casuali",
@@ -480,6 +486,21 @@ const it: PartialLocaleType = {
   },
   FineTuned: {
     Sysmessage: "Sei un assistente",
+  },
+  SearchChat: {
+    Name: "Cerca",
+    Page: {
+      Title: "Cerca nei messaggi",
+      Search: "Inserisci parole chiave per la ricerca",
+      NoResult: "Nessun risultato trovato",
+      NoData: "Nessun dato",
+      Loading: "Caricamento in corso",
+
+      SubTitle: (count: number) => `Trovati ${count} risultati`,
+    },
+    Item: {
+      View: "Visualizza",
+    },
   },
   Mask: {
     Name: "Maschera",
