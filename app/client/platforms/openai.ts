@@ -234,16 +234,16 @@ export class ChatGPTApi implements LLMApi {
         // Please do not ask me why not send max_tokens, no reason, this param is just shit, I dont want to explain anymore.
       };
 
-      // O1 使用 max_completion_tokens 控制token数 (https://platform.openai.com/docs/guides/reasoning#controlling-costs)
       if (isO1) {
         requestPayload["max_completion_tokens"] = modelConfig.max_tokens;
-      }
-
-      // add max_tokens to vision model
-      if (visionModel) {
+        // 如果 visionModel 也是 true，那么优先使用 max_completion_tokens
+        if (visionModel) {
+          requestPayload["max_tokens"] = undefined; // 这样确保 max_tokens 不会覆盖 max_completion_tokens 的优先级
+        }
+      } else if (visionModel) {
+        // 如果不是 O1 且是 vision model，则设置 max_tokens
         requestPayload["max_tokens"] = Math.max(modelConfig.max_tokens, 4000);
       }
-    }
 
     console.log("[Request] openai payload: ", requestPayload);
 
