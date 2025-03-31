@@ -636,28 +636,6 @@ export const DEFAULT_MODELS = [
       sorted: 12,
     },
   })),
-  ...deepseekModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "deepseek",
-      providerName: "DeepSeek",
-      providerType: "deepseek",
-      sorted: 13,
-    },
-  })),
-  ...siliconflowModels.map((name) => ({
-    name,
-    available: true,
-    sorted: seq++,
-    provider: {
-      id: "siliconflow",
-      providerName: "SiliconFlow",
-      providerType: "siliconflow",
-      sorted: 14,
-    },
-  })),
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
